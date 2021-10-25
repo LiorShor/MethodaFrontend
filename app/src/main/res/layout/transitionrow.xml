@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/stateRow"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
     android:layout_margin="10dp"
     app:cardCornerRadius="12dp"
     app:cardElevation="4dp"
@@ -17,24 +17,40 @@
         <TextView
             android:id="@+id/statusName"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
+            android:padding="1dp"
+            android:layout_margin="1dp"
             android:textColor="@color/red_500"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/kind"
+            app:layout_constraintBottom_toTopOf="@+id/statusFrom"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/removeButton"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/kind"
+            android:id="@+id/statusFrom"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
+            android:padding="1dp"
+            android:layout_margin="1dp"
             android:textColor="@color/red_500"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/radioButton"
-            app:layout_constraintStart_toEndOf="@+id/statusName"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/removeButton"
+            app:layout_constraintTop_toBottomOf="@+id/statusName" />
+
+        <TextView
+            android:id="@+id/statusTo"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:textColor="@color/red_500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/removeButton"
+            app:layout_constraintTop_toBottomOf="@+id/statusFrom" />
 
         <Button
             android:id="@+id/removeButton"
@@ -46,14 +62,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/kind"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

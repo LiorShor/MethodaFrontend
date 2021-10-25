@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">MethodaFrontend</string>
     <string name="add_new_item">Add new item</string>
+    <string name="deleteStatus">RemoveStatus</string>
+    <string name="deleteTransition">RemoveTransition</string>
+    <string name="add_new_transition">Add new Transition</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
 </resources>
